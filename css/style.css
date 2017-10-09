@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+i{
+	font-style: normal;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+body{
+	background: #f6f9fa;
+}
+.container{
+	width: 800px;
+	margin: 0 auto;
+	position: relative;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;  
+}
+.container video{
+	width: 800px;
+	height: 450px;
+	vertical-align: top;
+}
+.container .controls{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	line-height: 50px;
+	font-size: 25px;
+	color: #99a2aa;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+}
+.container .controls .progress{
+	/*width: 72%;*/
+	flex: 1;
+	height: 8px;
+	margin: 20px 10px 0 10px;
+	background: #eee;
+	border-radius: 5px;
+	float: left;
+	position: relative;
+}
+.container .controls>span{
+	font-family: "iconfont";
+	
+}
+.container .controls>span:hover{
+	cursor: pointer;
+}
+.container .controls .pause{
+	width: 40px;
+	text-align: center;
+}
+.container .controls .progress .proCover{
+	/*width: 50px;*/
+	height: 8px;
+	background: #00a1d6;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.container .controls .progress .slider{
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 3px #017cc3;
+	position: absolute;
+	left: -6px;
+	top: -2px;
+	z-index: 3;
+}
+.container .controls .controls-right{
+	display: flex;
+}
+.container .controls .controls-right .time{
+	font-size: 14px;
+}
+.container .controls .controls-right .volume{
+	margin: 0 10px;
+	position: relative;
+}
+.container .controls .controls-right .volume:hover{
+	cursor: pointer;
+}
+.container .controls .controls-right .volume>i{
+	font-family: "iconfont";
+	
+}
+.container .controls .controls-right .volume .volControl{
+	width: 8px;
+	height: 100px;
+	border-radius: 5px;
+	background: transparent;
+	border:1px solid #017CC3;
+	position: absolute;
+	left: 3px;
+	bottom: 40px;
+	display: none;
+}
+.container .controls .controls-right .volume .volControl .volCover{
+	width: 8px;
+	border-radius: 5px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.container .controls .controls-right .fullScreen{
+	font-family: "iconfont";
+	font-size: 20px;
+	margin-right: 10px;
+}
+.container .controls .controls-right .fullScreen:hover{
+	cursor: pointer;
+}
